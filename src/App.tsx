@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Link from "./components/Link";
+import { H1, H3 } from "./components/Typography";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen flex flex-col justify-center items-center">
+      <H1>
+        O melhor
+        <br />
+        <span className="uppercase text-purple-700">açaí</span>
+        <br /> do Brasil
+      </H1>
+
+      <H3>Está chegando na sua cidade</H3>
+
+      <Link href="https://google.com.br">Seja notificado &#8594;</Link>
     </div>
   );
 }
